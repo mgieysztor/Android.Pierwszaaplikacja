@@ -12,7 +12,7 @@
     tools:context="com.sdacademy.gieysztor.michal.pierwszaaplikacja.SDActivity">
 
     <TextView
-        android:id="@+id/firsttext"
+        android:id="@+id/firstText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
@@ -26,29 +26,51 @@
         android:layout_marginEnd="46dp"
         android:layout_marginRight="46dp" />
 
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nextButton"
+        android:layout_alignStart="@+id/nextButton"
+        android:layout_below="@+id/firstText"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="name"
+
+        android:inputType="textPersonName"/>
+        <!--android:text="name" -->
+
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nextButton"
+        android:layout_alignStart="@+id/nextButton"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="surname"
+        android:inputType="textPersonName"/>
+        <!--android:text="surname" -->
+        />
+
     <Button
         android:id="@+id/nextButton"
+        android:background="@color/myColor"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextSurname"
         android:layout_marginBottom="56dp"
         android:layout_marginLeft="26dp"
         android:layout_marginStart="26dp"
+        android:onClick="xmlOnClick"
         android:text="Dalej" />
-
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/nextButton"
-        android:layout_alignStart="@+id/nextButton"
-        android:layout_below="@+id/firsttext"
-        android:layout_marginTop="52dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
 
 </LinearLayout>
